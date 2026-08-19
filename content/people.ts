@@ -29,16 +29,16 @@ export const advisors = [
   },
   {
     name: "정강현",
-    title: "명예교수",
+    title: "교수",
     details: ["서울과학기술대학교 식품공학과"],
     image: null,
   },
-  {
-    name: "박진형",
-    title: "교수",
-    details: ["이화여자대학교 식품공학과"],
-    image: null,
-  },
+  // {
+  //   name: "박진병",
+  //   title: "교수",
+  //   details: ["이화여자대학교 식품공학과"],
+  //   image: null,
+  // },
   {
     name: "박상현",
     title: "책임연구원",
