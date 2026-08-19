@@ -174,10 +174,14 @@ body:has(.detail-page) .site-header { color: white; background: var(--forest-dee
 .people-page-links { display: flex; flex-wrap: wrap; gap: 20px 36px; margin-top: 70px; }
 .advisor-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .advisor-card { min-height: 300px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.advisor-card > span { color: var(--teal); font-size: 10px; }
+.advisor-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.advisor-card-top > span { color: var(--teal); font-size: 10px; }
+.advisor-photo { position: relative; width: 104px; aspect-ratio: 4 / 5; overflow: hidden; display: grid; place-items: center; color: #8b928c; background: #e7e2d8; }
+.advisor-photo img { object-fit: cover; }
+.advisor-photo > span { font-size: 9px; letter-spacing: .15em; }
 .advisor-card h2 { margin-bottom: 14px; font: 30px Georgia, "Noto Serif KR", serif; font-weight: 400; }
 .advisor-card h2 small { margin-left: 6px; color: var(--teal); font: 12px Pretendard, sans-serif; }
-.advisor-card p { margin: 0; color: #5d635e; font-size: 13px; }
+.advisor-card p { margin: 3px 0 0; color: #5d635e; font-size: 13px; }
 
 @media (max-width: 1100px) {
   :root { --content: calc(100vw - 64px); }
@@ -250,6 +254,7 @@ body:has(.detail-page) .site-header { color: white; background: var(--forest-dee
   .profile-group { grid-template-columns: 1fr; gap: 12px; }
   .advisor-grid { grid-template-columns: 1fr; }
   .advisor-card { min-height: 230px; }
+  .advisor-photo { width: 88px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

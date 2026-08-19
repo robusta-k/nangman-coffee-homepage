@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { advisors } from "@/content/people";
 
@@ -19,10 +20,19 @@ export default function AdvisorsPage() {
       <section className="advisor-grid" aria-label="자문위원 목록">
         {advisors.map((advisor, index) => (
           <article className="advisor-card" key={advisor.name}>
-            <span>{String(index + 1).padStart(2, "0")}</span>
-            <div>
+            <div className="advisor-card-top">
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div className="advisor-photo">
+                {advisor.image ? (
+                  <Image src={advisor.image} alt={`${advisor.name} ${advisor.title}`} fill sizes="(max-width: 520px) 88px, 104px" />
+                ) : (
+                  <span aria-hidden="true">PHOTO</span>
+                )}
+              </div>
+            </div>
+            <div className="advisor-card-content">
               <h2>{advisor.name} <small>{advisor.title}</small></h2>
-              <p>{advisor.field}</p>
+              {advisor.details.map((detail) => <p key={detail}>{detail}</p>)}
             </div>
           </article>
         ))}
