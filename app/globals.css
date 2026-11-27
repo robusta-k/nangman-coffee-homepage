@@ -176,8 +176,8 @@ body:has(.detail-page) .site-header { color: white; background: var(--forest-dee
 .advisor-card { min-height: 300px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .advisor-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
 .advisor-card-top > span { color: var(--teal); font-size: 10px; }
-.advisor-photo { position: relative; width: 104px; aspect-ratio: 4 / 5; overflow: hidden; display: grid; place-items: center; color: #8b928c; background: #e7e2d8; }
-.advisor-photo img { object-fit: cover; }
+.advisor-photo { position: relative; width: 104px; flex-shrink: 0; aspect-ratio: 4 / 5; overflow: hidden; display: grid; place-items: center; color: #8b928c; background: #e7e2d8; }
+.advisor-photo img { object-fit: cover; object-position: center top; }
 .advisor-photo > span { font-size: 9px; letter-spacing: .15em; }
 .advisor-card h2 { margin-bottom: 14px; font: 30px Georgia, "Noto Serif KR", serif; font-weight: 400; }
 .advisor-card h2 small { margin-left: 6px; color: var(--teal); font: 12px Pretendard, sans-serif; }

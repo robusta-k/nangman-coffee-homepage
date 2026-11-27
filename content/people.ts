@@ -4,6 +4,7 @@ export const directorProfile = {
   education: [
     "이화여자대학교 식품공학과 졸업",
     "단국대학교 문화예술대학원 커피학과 석사",
+    "이화여자대학교 식품공학과 박사과정",
   ],
   credentials: [
     "SCA AST",
@@ -22,13 +23,13 @@ export const advisors = [
     name: "박진병",
     title: "교수",
     details: ["이화여자대학교 식품공학과"],
-    image: null,
+    image: "/images/advisors/parkjb.jpg",
   },
   {
     name: "정강현",
     title: "교수",
     details: ["서울과학기술대학교 식품공학과"],
-    image: null,
+    image: "/images/advisors/jungkh.jpg",
   },
   {
     name: "이길상",
@@ -37,7 +38,7 @@ export const advisors = [
       "커피역사 인문학자",
       "한국학중앙연구원 교수",
     ],
-    image: null,
+    image: "/images/advisors/leegs.jpg",
   },
   {
     name: "박상현",
@@ -47,7 +48,7 @@ export const advisors = [
       // "한국원자력연구원(KAERI) 책임연구원",
       "University of Science and Technology 교수",
     ],
-    image: null,
+    image: "/images/advisors/parksh.avif",
   },
   {
     name: "전승민",
@@ -56,7 +57,7 @@ export const advisors = [
       "과학기술전문저술가",
       "e뉴스투데이 IT과학부장",
     ],
-    image: null,
+    image: "/images/advisors/jeonsm.jpg",
   },
   {
     name: "김천수",
@@ -71,6 +72,6 @@ export const advisors = [
       "지적재산법률자문",
       "특허법인 영비 대표변리사",
     ],
-    image: null,
+    image: "/images/advisors/yooyh.png",
   },
 ] as const;
