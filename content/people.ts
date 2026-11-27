@@ -19,12 +19,9 @@ export const directorProfile = {
  */
 export const advisors = [
   {
-    name: "이길상",
+    name: "박진병",
     title: "교수",
-    details: [
-      "커피역사 인문학자",
-      "한국학중앙연구원 교수",
-    ],
+    details: ["이화여자대학교 식품공학과"],
     image: null,
   },
   {
@@ -33,19 +30,22 @@ export const advisors = [
     details: ["서울과학기술대학교 식품공학과"],
     image: null,
   },
-  // {
-  //   name: "박진병",
-  //   title: "교수",
-  //   details: ["이화여자대학교 식품공학과"],
-  //   image: null,
-  // },
   {
     name: "박상현",
-    title: "책임연구원",
+    title: "교수",
     details: [
       "화학자, 커피화학자문",
       "한국원자력연구원(KAERI) 책임연구원",
       "University of Science and Technology 교수",
+    ],
+    image: null,
+  },
+  {
+    name: "이길상",
+    title: "교수",
+    details: [
+      "커피역사 인문학자",
+      "한국학중앙연구원 교수",
     ],
     image: null,
   },
@@ -65,6 +65,12 @@ export const advisors = [
       "지적재산법률자문",
       "특허법인 영비 대표변리사",
     ],
+    image: null,
+  },
+  {
+    name: "김천수",
+    title: "원장",
+    details: ["김천수 한의원 원장"],
     image: null,
   },
 ] as const;
