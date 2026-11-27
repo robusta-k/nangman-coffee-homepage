@@ -31,16 +31,6 @@ export const advisors = [
     image: null,
   },
   {
-    name: "박상현",
-    title: "교수",
-    details: [
-      "화학자, 커피화학자문",
-      "한국원자력연구원(KAERI) 책임연구원",
-      "University of Science and Technology 교수",
-    ],
-    image: null,
-  },
-  {
     name: "이길상",
     title: "교수",
     details: [
@@ -50,12 +40,28 @@ export const advisors = [
     image: null,
   },
   {
+    name: "박상현",
+    title: "교수",
+    details: [
+      "화학자, 커피화학자문",
+      // "한국원자력연구원(KAERI) 책임연구원",
+      "University of Science and Technology 교수",
+    ],
+    image: null,
+  },
+  {
     name: "전승민",
-    title: "작가",
+    title: "언론인",
     details: [
       "과학기술전문저술가",
       "e뉴스투데이 IT과학부장",
     ],
+    image: null,
+  },
+  {
+    name: "김천수",
+    title: "원장",
+    details: ["김천수 한의원 원장"],
     image: null,
   },
   {
@@ -65,12 +71,6 @@ export const advisors = [
       "지적재산법률자문",
       "특허법인 영비 대표변리사",
     ],
-    image: null,
-  },
-  {
-    name: "김천수",
-    title: "원장",
-    details: ["김천수 한의원 원장"],
     image: null,
   },
 ] as const;
