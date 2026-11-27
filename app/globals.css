@@ -163,6 +163,8 @@ body:has(.detail-page) .site-header { color: white; background: var(--forest-dee
 .people-page-heading > p:not(.eyebrow) { max-width: 660px; color: #5d635e; font-size: 16px; }
 .profile-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 10%; align-items: start; padding-top: 60px; border-top: 1px solid var(--line); }
 .profile-monogram { aspect-ratio: 4 / 3; display: grid; place-items: center; color: rgba(255,255,255,.82); background: linear-gradient(145deg, #769188, #284a41); font: clamp(72px, 10vw, 140px) Georgia, serif; letter-spacing: -.08em; }
+.director-monogram, .profile-monogram { position: relative; overflow: hidden; }
+.director-monogram img, .profile-monogram img { object-fit: cover; object-position: center top; }
 .profile-label { margin-bottom: 15px; color: var(--teal); font-size: 10px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
 .profile-content h2 { margin: 0 0 4px; font: 46px Georgia, "Noto Serif KR", serif; font-weight: 400; }
 .profile-role { margin-bottom: 55px; color: var(--teal); font-size: 13px; }

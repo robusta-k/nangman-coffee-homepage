@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { directorProfile } from "@/content/people";
 
@@ -17,7 +18,9 @@ export default function DirectorPage() {
       </div>
 
       <section className="profile-layout" aria-labelledby="director-name">
-        <div className="profile-monogram" aria-hidden="true">JH</div>
+        <div className="profile-monogram">
+          <Image src={directorProfile.image} alt="장지혜 낭만커피연구소 소장" fill sizes="(max-width: 1023px) 100vw, 530px" />
+        </div>
         <div className="profile-content">
           <p className="profile-label">Director</p>
           <h2 id="director-name">{directorProfile.name}</h2>

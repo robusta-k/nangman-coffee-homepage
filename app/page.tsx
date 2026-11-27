@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import { directorProfile } from "@/content/people";
 import { ArrowLink } from "@/components/arrow-link";
 import { HeroCarousel } from "@/components/hero-carousel";
 import { SectionHeading } from "@/components/section-heading";
@@ -60,7 +62,9 @@ export default function Home() {
       </section>
 
       <section className="director-section section-pad">
-        <div className="director-monogram" aria-hidden="true">JH</div><div><p className="eyebrow">People</p><h2>장지혜</h2><p className="role">낭만커피연구소 소장</p><p>커피를 둘러싼 환경과 생명, 가공과 기술, 감각과 인간, 산업과 사회의 관계에 관심을 두고 연구합니다. 연구소의 연구 방향을 수립하고 분야별 전문가들과 함께 교육·기술·제품·산업 프로젝트를 기획합니다.</p><div className="director-links"><ArrowLink href="/about">연구소 이야기 더보기</ArrowLink><ArrowLink href="/director">소장 프로필 보기</ArrowLink><ArrowLink href="/advisors">자문위원 안내</ArrowLink></div></div>
+        <div className="director-monogram">
+          <Image src={directorProfile.image} alt="장지혜 낭만커피연구소 소장" fill sizes="(max-width: 1023px) 100vw, 50vw" />
+        </div><div><p className="eyebrow">People</p><h2>장지혜</h2><p className="role">낭만커피연구소 소장</p><p>커피를 둘러싼 환경과 생명, 가공과 기술, 감각과 인간, 산업과 사회의 관계에 관심을 두고 연구합니다. 연구소의 연구 방향을 수립하고 분야별 전문가들과 함께 교육·기술·제품·산업 프로젝트를 기획합니다.</p><div className="director-links"><ArrowLink href="/about">연구소 이야기 더보기</ArrowLink><ArrowLink href="/director">소장 프로필 보기</ArrowLink><ArrowLink href="/advisors">자문위원 안내</ArrowLink></div></div>
       </section>
 
       <section className="contact-section section-pad"><p className="eyebrow light">Start a Conversation</p><h2>커피에 관한 질문에서<br />새로운 연구와 협력이 시작됩니다.</h2><p>연구, 교육, 카페 솔루션, 제품개발 및 협력사업에 관한 문의를 남겨주세요.</p><Link className="button button-light" href="/contact">문의하기 <span aria-hidden="true">↗</span></Link></section>
