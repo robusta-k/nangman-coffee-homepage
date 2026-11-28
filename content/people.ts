@@ -8,9 +8,10 @@ export const directorProfile = {
     "이화여자대학교 식품공학과 박사과정",
   ],
   credentials: [
-    "SCA AST",
+    "SCA AST (Specialty Coffee Association Authorized SCA Trainer)",
     "Q Grader Instructor",
-    "코리아 로스팅 커피 어워즈 운영위원",
+    "파스쿠찌 의정부 고산점 대표",
+    "코리아 로스팅 커피 어워즈 심사 교육위원장",
   ],
 } as const;
 
