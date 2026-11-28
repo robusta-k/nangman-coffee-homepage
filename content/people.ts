@@ -112,7 +112,7 @@ export const advisors = [
     name: "김천수",
     title: "한의사",
     details: ["한의학 및 커피·건강 자문", "김천수 한의원 원장"],
-    image: null,
+    image: "/images/advisors/kimcs.PNG",
   },
   {
     name: "유용혁",
