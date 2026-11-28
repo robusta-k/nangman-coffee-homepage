@@ -3,9 +3,9 @@ export const directorProfile = {
   role: "낭만커피연구소 소장",
   image: "/images/advisors/jangjh.png",
   education: [
-    "이화여자대학교 식품공학과 졸업",
+    "이화여자대학교 식품생명공학과 졸업",
     "단국대학교 문화예술대학원 커피학과 석사",
-    "이화여자대학교 식품공학과 박사과정",
+    "이화여자대학교 식품생명공학과 박사과정",
   ],
   credentials: [
     "SCA AST (Specialty Coffee Association Authorized SCA Trainer)",
