@@ -42,6 +42,25 @@ export default function DirectorPage() {
         </div>
       </section>
 
+      <section className="director-publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">연구실적</h2>
+        <ol className="publication-list">
+          {directorProfile.publications.map((publication) => (
+            <li key={publication.url}>
+              <span className="publication-badge">KCI 등재</span>
+              <h3>
+                <a href={publication.url} target="_blank" rel="noopener noreferrer">
+                  {publication.title}
+                  <span className="publication-external">KCI 논문 보기 ↗ (새 창)</span>
+                </a>
+              </h3>
+              <p>{publication.authors} · {publication.journal} {publication.volume} · pp. {publication.pages} · {publication.date}</p>
+              <p>{publication.publisher} · {publication.field}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
       <div className="people-page-links">
         <Link className="arrow-link" href="/advisors">자문위원 안내 <span aria-hidden="true">↗</span></Link>
         <Link className="arrow-link" href="/">메인으로 돌아가기 <span aria-hidden="true">↗</span></Link>
