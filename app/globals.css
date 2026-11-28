@@ -178,7 +178,7 @@ body:has(.detail-page) .site-header { color: white; background: var(--forest-dee
 .director-publications h2 { margin: 0 0 19px; font-size: 19px; font-weight: 500; }
 .publication-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .publication-list li { min-width: 0; padding: 22px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; line-height: 1.4; }
-.publication-badge { color: var(--teal); font-size: 10px; font-weight: 700; }
+.publication-badge { display: inline-block; margin-right: 6px; color: var(--teal); font-size: 10px; font-weight: 700; vertical-align: middle; white-space: nowrap; }
 .publication-list h3 { margin: 8px 0 10px; font-size: clamp(13px, 1.6vw, 16px); font-weight: 500; line-height: 1.3; }
 .publication-list a:hover, .publication-list a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
 .publication-external { display: block; margin-top: 6px; color: var(--teal); font-size: 10px; font-weight: 400; }

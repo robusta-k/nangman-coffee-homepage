@@ -47,8 +47,8 @@ export default function DirectorPage() {
         <ol className="publication-list">
           {directorProfile.publications.map((publication) => (
             <li key={publication.url}>
-              <span className="publication-badge">KCI 등재</span>
               <h3>
+                <span className="publication-badge">KCI 등재</span>{" "}
                 <a href={publication.url} target="_blank" rel="noopener noreferrer">
                   {publication.title}
                   <span className="publication-external">KCI 논문 보기 ↗ (새 창)</span>
