@@ -45,7 +45,7 @@ export default function DirectorPage() {
       <section className="director-publications" aria-labelledby="publications-heading">
         <h2 id="publications-heading">연구실적</h2>
         <ol className="publication-list">
-          {directorProfile.publications.map((publication) => (
+          {[...directorProfile.publications].sort((a, b) => b.date.localeCompare(a.date)).map((publication) => (
             <li key={publication.url}>
               <h3>
                 <span className="publication-badge">KCI 등재</span>{" "}

@@ -71,7 +71,7 @@ export const advisors = [
   {
     name: "박진병",
     title: "교수",
-    details: ["이화여자대학교 식품공학과"],
+    details: ["이화여자대학교 식품생명공학과"],
     image: "/images/advisors/parkjb.jpg",
   },
   {
@@ -110,8 +110,8 @@ export const advisors = [
   },
   {
     name: "김천수",
-    title: "원장",
-    details: ["김천수 한의원 원장"],
+    title: "한의사",
+    details: ["한의학 및 커피·건강 자문", "김천수 한의원 원장"],
     image: null,
   },
   {
